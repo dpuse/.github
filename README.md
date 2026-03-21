@@ -12,44 +12,41 @@ This schematic presents a high-level view of the repositories in the DPUse proje
 
 The following repositories exist solely to support the development process and are not used in production or distributed in any form.
 
-| Name                  | Type             | Notes                                                                       |
-| --------------------- | ---------------- | --------------------------------------------------------------------------- |
-| datapos-development   | utilities (node) | A library of utilities for managing the Data Positioning repositories.      |
-| eslint-config-datapos | eslintConfig     | Base ESLint configuration used by all Data Positioning (@datapos) projects. |
+| Name                | Type             | Notes                                                                       |
+| ------------------- | ---------------- | --------------------------------------------------------------------------- |
+| dpuse-development   | utilities (node) | A library of utilities for managing the Data Positioning repositories.      |
+| eslint-config-dpuse | eslintConfig     | Base ESLint configuration used by all Data Positioning (@datapos) projects. |
 
 ### Production Repositories
 
 The following repositories contain production-ready code and are used in live environments and/or distributed as part of the final product.
 
-| Name                                   | Visibility | Type       | Notes                                                                                          |
-| -------------------------------------- | ---------- | ---------- | ---------------------------------------------------------------------------------------------- |
-| datapos-api                            | private    | api        |                                                                                                |
-| datapos-app-nuxt                       | private    | app        |                                                                                                |
-| datapos-engine                         | private    | engine     |                                                                                                |
-| datapos-resources                      | private    | assets     |                                                                                                |
-| datapos-shared                         | public     | primitives | Common constants, interfaces, types and utilities shared across all Data Positioning projects. |
-| datapos-connector-application-emulator | public     | connector  |                                                                                                |
-| datapos-connector-dexie-js             | public     | connector  |                                                                                                |
-| datapos-connector-file-store-emulator  | public     | connector  |                                                                                                |
-| datapos-connector-rxdb                 | public     | connector  |                                                                                                |
-| datapos-context-default                | public     | context    |                                                                                                |
-| datapos-presenter-default              | public     | presenter  |                                                                                                |
-| datapos-tool-highcharts                | public     | tool       |                                                                                                |
-| datapos-tool-presenter                 | public     | tool       |                                                                                                |
+| Name                                 | Visibility | Type       | Notes                                                                                          |
+| ------------------------------------ | ---------- | ---------- | ---------------------------------------------------------------------------------------------- |
+| dpuse-api                            | private    | api        |                                                                                                |
+| dpuse-app                            | private    | app        |                                                                                                |
+| dpuse-engine                         | private    | engine     |                                                                                                |
+| dpuse-resources                      | private    | assets     |                                                                                                |
+| dpuse-shared                         | public     | primitives | Common constants, interfaces, types and utilities shared across all Data Positioning projects. |
+| dpuse-connector-application-emulator | public     | connector  |                                                                                                |
+| dpuse-connector-dexie-js             | public     | connector  |                                                                                                |
+| dpuse-connector-file-store-emulator  | public     | connector  |                                                                                                |
+| dpuse-connector-rxdb                 | public     | connector  |                                                                                                |
+| dpuse-context-default                | public     | context    |                                                                                                |
+| dpuse-presenter-default              | public     | presenter  |                                                                                                |
+| dpuse-tool-highcharts                | public     | tool       |                                                                                                |
+| dpuse-tool-presenter                 | public     | tool       |                                                                                                |
 
 ## Software, Services & Tools
 
 The following services are used to support the production environment.
 
-| Name                                       | License    | Notes                                                                       |
-| ------------------------------------------ | ---------- | --------------------------------------------------------------------------- |
-| [Alby Chat]()                              | Commercial |                                                                             |
-| [Checkly](https://www.checklyhq.com/)      | Commercial | Response time monitoring. Uptime & heartbeat monitoring.                    |
-| [Cloudflare](https://www.cloudflare.com/)  | Commercial | Domain registration, application hosting, file storage and state messaging. |
-| [Cronitor](https://cronitor.io/)           | Commercial | Uptime & heartbeat monitoring.                                              |
-| [Hanko](https://www.hanko.io/)             | Commercial | Authentication and user management.                                         |
-| [Honeybadger](https://www.honeybadger.io/) | Commercial | Error tracking and logging. Uptime, cron & heartbeat monitoring.            |
-| [Namecheap](https://www.namecheap.com/)    | Commercial | Email hosting.                                                              |
+| Name                                      | License    | Notes                                                                       |
+| ----------------------------------------- | ---------- | --------------------------------------------------------------------------- |
+| [Checkly](https://www.checklyhq.com/)     | Commercial | Response time monitoring. Uptime & heartbeat monitoring.                    |
+| [Cloudflare](https://www.cloudflare.com/) | Commercial | Domain registration, application hosting, file storage and state messaging. |
+| [Cronitor](https://cronitor.io/)          | Commercial | Uptime & heartbeat monitoring.                                              |
+| [Hanko](https://www.hanko.io/)            | Commercial | Authentication and user management.                                         |
 
 The following services and tools are used to support the development environment.
 
@@ -57,7 +54,7 @@ The following services and tools are used to support the development environment
 | -------------------------------------------- | ---------- | ------------------------------------- |
 | [1Password](https://1password.com/)          | Commercial |                                       |
 | [BadgeApp](https://www.bestpractices.dev/en) |            | OpenSSF best practices badge program. |
-| [Boxy SVG Editor](https://boxy-svg.com/)     |            | SVG image editor.                     |
+| [Boxy SVG Editor](https://boxy-svg.com/)     | Commercial | SVG image editor.                     |
 | [Draw.io](https://drawio-app.com/)           |            |                                       |
 | [git]()                                      |            |                                       |
 | [GitGuardian](https://www.gitguardian.com/)  |            | Security management.                  |
@@ -79,16 +76,9 @@ The following dependencies...
 | [Micromark]()                                        | micromark parser                  |         | [micromark](https://www.npmjs.com/package/micromark) |
 |                                                      | micromark gfm table extension     |         | [micromark-extension-gfm-table ]()                   |
 | [Nanoid]()                                           | nanoid                            |         | [nanoid]()                                           |
-| [Nuxt]()                                             | nuxt                              |         | [nuxt]()                                             |
-|                                                      | nuxt i18n                         |         | [@nuxtjs/i18n]()                                     |
-|                                                      | nuxt pinia                        |         | [@pinia/nuxt]()                                      |
-|                                                      | nuxt security                     |         | [nuxt-security]()                                    |
-|                                                      | nuxt ui                           |         | [nuxt/ui]()                                          |
-|                                                      | nuxt vueuse                       |         | [@vueuse/nuxt]()                                     |
-|                                                      | nuxt vueuse router                |         | [@vueuse/router]()                                   |
 | [Vue]()                                              | vue                               |         | [vue]()                                              |
+|                                                      | vue pinia                         |         | [pinia]()                                            |
 |                                                      | vue router                        |         | [vue-router]()                                       |
-|                                                      | vue unhead                        |         | [@unhead/vue]()                                      |
 | [Speed Highlight]()                                  | @speed highlight core             |         | [@speed-highlight/core ]()                           |
 | [TanStack Virtual]()                                 | tanstack vue virtual              |         | [@tanstack/vue-virtual]()                            |
 
