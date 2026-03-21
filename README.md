@@ -1,10 +1,10 @@
-# Data Positioning (.github)
+# DPUse (.github)
 
-A collection of top-level Data Positioning project documentation. This is a special GitHub organization-level repository.
+A collection of top-level project documentation. This is a special GitHub organization-level repository.
 
-## Data Positioning Repositories Schematic
+## Repositories Schematic
 
-This schematic presents a high-level view of the repositories in the Data Positioning project and their relationships to one another.
+This schematic presents a high-level view of the repositories in the DPUse project and their relationships to one another.
 
 ![Data Positioning Repositories Schematic](Repositories%20Schematic.svg 'Data Positioning Project Repositories')
 
