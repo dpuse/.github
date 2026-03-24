@@ -1,13 +1,13 @@
-### Data Positioning Projects (@datapos repositories):
+### DPUse (dpuse repositories):
 
-**Application:** datapos-api _(private)_, datapos-app-nuxt _(private)_, datapos-engine _(private)_, datapos-resources _(private)_ & datapos-shared.
+**Application:** dpuse-api _(private)_, dpuse-app _(private)_, dpuse-engine _(private)_, dpuse-resources _(private)_ & dpuse-shared.
 
-**Connectors (@datapos/datapos-connector-[name]):** application-emulator, dexie-js, _dbnomics_, _dropbox_, file-store-emulator, _google-drive_, _microsoft-onedrive_, _rxdb_, _salesforce_ & _sap-successfactors_.
+**Connectors (@dpuse/dpuse-connector-[name]):** application-emulator, dexie-js, _dbnomics_, _dropbox_, file-store-emulator, _google-drive_, _microsoft-onedrive_, _rxdb_, _salesforce_ & _sap-successfactors_.
 
-**Contexts (@datapos/datapos-context-[name]):** default.
+**Contexts (@dpuse/dpuse-context-[name]):** default.
 
-**Presenters (@datapos/datapos-presenter-[name]):** default.
+**Presenters (@dpuse/dpuse-presenter-[name]):** default.
 
-**Tools (@datapos/datapos-tool-[name]):** _chart-js_, _csv-parse_, _date-fns_, highcharts & micromark.
+**Tools (@dpuse/dpuse-tool-[name]):** _chart-js_, _csv-parse_, _date-fns_, highcharts & micromark.
 
-**Support:** datapos-development & eslint-config-datapos.
+**Support:** dpuse-development & eslint-config-dpuse.
