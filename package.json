@@ -1,36 +1,43 @@
 {
     "name": "github",
-    "version": "0.0.40",
+    "version": "0.0.41",
+    "private": true,
     "description": "A collection of top-level project documentation.",
+    "license": "MIT",
     "author": "Jonathan Terrell <terrell.jm@gmail.com>",
-    "private": false,
-    "prettier": "@datapos/datapos-development/prettierrc",
-    "devDependencies": {
-        "@datapos/datapos-development": "^0.3.448",
-        "@dpuse/eslint-config-dpuse": "^1.0.49",
-        "@typescript-eslint/eslint-plugin": "^8.57.1",
-        "@typescript-eslint/parser": "^8.57.1",
-        "eslint": "^9.39.4",
-        "eslint-plugin-import": "^2.32.0",
-        "eslint-plugin-security": "^4.0.0",
-        "eslint-plugin-sonarjs": "^4.0.2",
-        "eslint-plugin-unicorn": "^63.0.0",
-        "jiti": "^2.6.1",
-        "npm-check-updates": "^19.6.5",
-        "prettier": "^3.8.1",
-        "typescript": "^5.9.3"
+    "type": "module",
+    "homepage": "https://www.dpuse.app",
+    "bugs": {
+        "url": "https://github.com/dpuse/.github/issues"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dpuse/.github.git"
+    },
+    "engines": {
+        "node": ">=24",
+        "npm": ">=12"
+    },
+    "devEngines": {
+        "runtime": {
+            "name": "node",
+            "version": ">=24",
+            "onFail": "error"
+        },
+        "packageManager": {
+            "name": "npm",
+            "version": ">=12",
+            "onFail": "error"
+        }
+    },
+    "prettier": "@dpuse/dpuse-development/prettierrc",
     "scripts": {
-        "audit": "echo \"❌ 'audit' command not implemented.\"",
-        "build": "echo \"❌ 'build' command not implemented.\"",
-        "check": "node -e \"import('@datapos/datapos-development').then(m => m.checkDependencies())\"",
-        "document": "echo \"❌ 'document' command not implemented.\"",
-        "format": "node -e \"import('@datapos/datapos-development').then(m => m.formatCode())\"",
-        "lint": "node -e \"import('@datapos/datapos-development').then(m => m.lintCode())\"",
-        "release": "echo \"❌ 'release' command not implemented.\"",
-        "sync": "node -e \"import('@datapos/datapos-development').then(m => m.syncProjectWithGitHub())\"",
-        "test:e2e": "echo \"❌ 'test:e2e' command not implemented.\"",
-        "test:unit": "echo \"❌ 'test:unit' command not implemented.\"",
-        "update": "node -e \"import('@datapos/datapos-development').then(m => m.updateDataPosDependencies(['development']))\""
+        "check": "node -e \"import('@dpuse/dpuse-development').then(m => m.checkConfigFiles())\" && node -e \"import('@dpuse/dpuse-development').then(m => m.checkDependencies())\"",
+        "format": "node -e \"import('@dpuse/dpuse-development').then(m => m.formatCode())\"",
+        "sync": "node -e \"import('@dpuse/dpuse-development').then(m => m.syncProjectWithGitHub())\""
+    },
+    "devDependencies": {
+        "@dpuse/dpuse-development": "^0.3.716",
+        "prettier": "^3.9.8"
     }
 }

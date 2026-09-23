@@ -1,7 +1,31 @@
-# Common Git ignore rules for UNPUBLISHED Data Positioning repositories.
-dependency-check-bin
+# Default '.gitignore' configuration for DPUse projects.
+.dev.vars
+.env*
+.eslintcache
+.wrangler
+coverage
 dist
 dist-scripts
 node_modules
-.env
+*.tsbuildinfo
 **/.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Rust
+rust/*/pkg
+rust/*/target
+rust/target
+
+# Testing
+__screenshots__/
+test-results/
+playwright-report/
+
+# VitePress
+site/kb/
+site/.vitepress/cache
+site/.vitepress/dist
