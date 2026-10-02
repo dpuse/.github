@@ -1,8 +1,8 @@
 {
     "id": "github",
     "description": {},
-    "typeId": "github",
-    "version": "0.0.44",
     "icon": null,
-    "iconDark": null
+    "iconDark": null,
+    "typeId": "github",
+    "version": "0.0.45"
 }

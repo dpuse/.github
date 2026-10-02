@@ -1,6 +1,6 @@
 {
     "name": "github",
-    "version": "0.0.44",
+    "version": "0.0.45",
     "private": true,
     "description": "A collection of top-level project documentation.",
     "license": "MIT",
@@ -37,7 +37,7 @@
         "sync": "node -e \"import('@dpuse/dpuse-development').then(m => m.syncProjectWithGitHub())\""
     },
     "devDependencies": {
-        "@dpuse/dpuse-development": "^0.3.816",
+        "@dpuse/dpuse-development": "^0.3.817",
         "prettier": "^3.9.9"
     }
 }
