@@ -21,21 +21,18 @@ The following repositories exist solely to support the development process and a
 
 The following repositories contain production-ready code and are used in live environments and/or distributed as part of the final product.
 
-| Name                                 | Visibility | Type       | Notes                                                                                          |
-| ------------------------------------ | ---------- | ---------- | ---------------------------------------------------------------------------------------------- |
-| dpuse-api                            | private    | api        |                                                                                                |
-| dpuse-app                            | private    | app        |                                                                                                |
-| dpuse-engine                         | private    | engine     |                                                                                                |
-| dpuse-resources                      | private    | assets     |                                                                                                |
-| dpuse-shared                         | public     | primitives | Common constants, interfaces, types and utilities shared across all Data Positioning projects. |
-| dpuse-connector-application-emulator | public     | connector  |                                                                                                |
-| dpuse-connector-dexie-js             | public     | connector  |                                                                                                |
-| dpuse-connector-file-store-emulator  | public     | connector  |                                                                                                |
-| dpuse-connector-rxdb                 | public     | connector  |                                                                                                |
-| dpuse-context-default                | public     | context    |                                                                                                |
-| dpuse-presenter-default              | public     | presenter  |                                                                                                |
-| dpuse-tool-highcharts                | public     | tool       |                                                                                                |
-| dpuse-tool-presenter                 | public     | tool       |                                                                                                |
+| Name                   | Visibility | Type       | Notes                                                                                          |
+| ---------------------- | ---------- | ---------- | ---------------------------------------------------------------------------------------------- |
+| dpuse-api              | private    | api        |                                                                                                |
+| dpuse-app              | private    | app        |                                                                                                |
+| dpuse-engine           | private    | engine     |                                                                                                |
+| dpuse-resources        | private    | assets     |                                                                                                |
+| dpuse-shared           | public     | primitives | Common constants, interfaces, types and utilities shared across all Data Positioning projects. |
+| dpuse-connector-[name] | public     | connector  |                                                                                                |
+| dpuse-cookbook-[name]  | public     | cookbook   |                                                                                                |
+| dpuse-presenter-[name] | public     | presenter  |                                                                                                |
+| dpuse-tool-[name]      | public     | tool       |                                                                                                |
+| dpuse-kb               | private    | doc        |                                                                                                |
 
 ## Software, Services & Tools
 
@@ -43,6 +40,7 @@ The following services are used to support the production environment.
 
 | Name                                      | License    | Notes                                                                       |
 | ----------------------------------------- | ---------- | --------------------------------------------------------------------------- |
+| [Axiom](https://www.axion.co/)            | Commercial | Response time monitoring. Uptime & heartbeat monitoring.                    |
 | [Checkly](https://www.checklyhq.com/)     | Commercial | Response time monitoring. Uptime & heartbeat monitoring.                    |
 | [Cloudflare](https://www.cloudflare.com/) | Commercial | Domain registration, application hosting, file storage and state messaging. |
 | [Cronitor](https://cronitor.io/)          | Commercial | Uptime & heartbeat monitoring.                                              |

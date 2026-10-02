@@ -32,12 +32,12 @@
     },
     "prettier": "@dpuse/dpuse-development/prettierrc",
     "scripts": {
-        "check": "node -e \"import('@dpuse/dpuse-development').then(m => m.checkConfigFiles())\" && node -e \"import('@dpuse/dpuse-development').then(m => m.checkDependencies())\"",
+        "check": "node -e \"import('@dpuse/dpuse-development').then(m => m.checkProject())\"",
         "format": "node -e \"import('@dpuse/dpuse-development').then(m => m.formatCode())\"",
         "sync": "node -e \"import('@dpuse/dpuse-development').then(m => m.syncProjectWithGitHub())\""
     },
     "devDependencies": {
-        "@dpuse/dpuse-development": "^0.3.719",
+        "@dpuse/dpuse-development": "^0.3.816",
         "prettier": "^3.9.9"
     }
 }
