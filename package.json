@@ -37,7 +37,7 @@
         "sync": "node -e \"import('@dpuse/dpuse-development').then(m => m.syncProjectWithGitHub())\""
     },
     "devDependencies": {
-        "@dpuse/dpuse-development": "^1.0.139",
+        "@dpuse/dpuse-development": "^1.0.153",
         "prettier": "^3.9.9"
     }
 }
